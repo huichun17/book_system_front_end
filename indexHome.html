@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>追加</title>
+    <link rel="stylesheet" href="./indexHome.css">
+</head>
+
+<body>
+    <div class="btnPageArea">
+        <button type="button">
+            <a href="./indexHome.html">ホームページ</a>
+        </button>
+        <button type="button">
+            <a href="./bastSale.html">ベストセラー</a>
+        </button>
+        <button type="button">
+            <a href="./revise.html">内容変更</a>
+        </button>
+        <button type="button">
+            <a href="./bastSale.html">内容削除</a>
+        </button>
+        <button type="button">
+            <a href="./search.html">内容検索</a>
+        </button>
+        <button type="button">
+            <a href="./bastSale.html">ご注文</a>
+        </button>
+    </div>
+    <div class="add_Book_Area">
+        <div class="input_Area">
+            書籍名：<input type="text" id="bookTitleId"><br>
+            ISBN：<input type="text" id="isbnId"><br>
+            著者名：<input type="text" id="authorId"><br>
+            価格：<input type="text" id="priceId"><br>
+            在庫：<input type="text" id="inventoryId"><br>
+            販売数：<input type="text" id="salesId">冊<br>
+            ジャンル：<input type="text" id="typeId"><br> <!-- type  -->
+        </div>
+        <button class="add_Btn" id="add_BtnId">追加</button>
+        <p id="addResponse"></p>
+    </div>
+
+    <script src="./indexHome.js"></script>
+</body>
+
+</html>
