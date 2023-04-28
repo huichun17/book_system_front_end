@@ -5,44 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>追加</title>
+    <title>スナオ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./indexHome.css">
 </head>
 
 <body>
-    <div class="btnPageArea">
-        <button type="button">
-            <a href="./indexHome.html">ホームページ</a>
-        </button>
-        <button type="button">
-            <a href="./bastSale.html">ベストセラー</a>
-        </button>
-        <button type="button">
-            <a href="./revise.html">内容変更</a>
-        </button>
-        <button type="button">
-            <a href="./bastSale.html">内容削除</a>
-        </button>
-        <button type="button">
-            <a href="./search.html">内容検索</a>
-        </button>
-        <button type="button">
-            <a href="./bastSale.html">ご注文</a>
-        </button>
+
+    <div class="header">
+        <div class="container">
+            <a href="./indexHome.html" class="logo">
+                <i class="fa-solid fa-book fa-2xl"></i>
+                <span>スナオ</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="./buyBook.html" class="item">ご注文</a>
+                <a href="./search.html" class="item">内容検索</a>
+                <a href="./revise.html" class="item">内容変更</a>
+                <a href="./" class="item">内容削除</a>
+                <a href="./bastSale.html" class="item">ランキング</a>
+                <a href="./" class="item">またある</a>
+                <a href="./" class="item">またある</a>
+            </nav>
+            <form class="navSearch">
+                <input type="search" placeholder="ジャンルを入力してください">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
     </div>
-    <div class="add_Book_Area">
+<!-- ======================================== -->
+    <!-- <div class="header">
+        <div class="btnPageArea">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary"> <a href="./indexHome.html">ホームページ</a></button>
+                <button type="button" class="btn btn-primary"><a href="./bastSale.html">ベストセラー</a></button>
+                <button type="button" class="btn btn-primary"><a href="./revise.html">内容変更</a></button>
+                <button type="button" class="btn btn-primary"> <a href="./bastSale.html">内容削除</a></button>
+                <button type="button" class="btn btn-primary"> <a href="./search.html">内容検索</a></button>
+                <button type="button" class="btn btn-primary"> <a href="./buyBook.html">ご注文</a></button>
+                <button type="button" class="btn btn-primary"><a href="./bastSale.html">内容削除</a></button>
+            </div>
+        </div>
+    </div> -->
+    <!-- 輪播Area -->
+    <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./bookStore/20230421153920659_pc.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./bookStore/honyataisho2023_700x294.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./bookStore/store-event-the_city_and_its_uncertain_walls.png" class="d-block w-100"
+                        alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="addBookArea">
         <div class="input_Area">
-            書籍名：<input type="text" id="bookTitleId"><br>
-            ISBN：<input type="text" id="isbnId"><br>
-            著者名：<input type="text" id="authorId"><br>
-            価格：<input type="text" id="priceId"><br>
-            在庫：<input type="text" id="inventoryId"><br>
-            販売数：<input type="text" id="salesId">冊<br>
-            ジャンル：<input type="text" id="typeId"><br> <!-- type  -->
+            書籍名：<br><input type="text" id="bookTitleId" placeholder="書籍名を入力してください "><br>
+            ISBN：<br><input type="text" id="isbnId"><br>
+            著者名：<br><input type="text" id="authorId"><br>
+            価格：<br><input type="text" id="priceId"><br>
+            在庫：<br><input type="text" id="inventoryId"><br>
+            販売数：<br><input type="text" id="salesId">冊<br>
+            ジャンル：<br><input type="text" id="typeId"><br> <!-- type  -->
         </div>
         <button class="add_Btn" id="add_BtnId">追加</button>
-        <p id="addResponse"></p>
+        <div class="result"> </div>
+        <!-- <p id="addResponse"></p> -->
     </div>
+    
+    <footer>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14686.303471666515!2d120.2391669!3d23.0393401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7747c27fc4c5%3A0x8f336b40888d840!2z5Y-w5Y2X5oeJ55So56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1682584982989!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 
     <script src="./indexHome.js"></script>
 </body>

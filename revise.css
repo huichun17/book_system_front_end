@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #26ff93;
+  font-weight: 300;
+}
+
+.header {
+  background-image: linear-gradient(90deg, #333, #555);
+}
+.header .container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header .container .logo {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+}
+.header .container .logo .fa-solid {
+  padding-right: 0.5em;
+  color: #26ff93;
+}
+.header .container .logo span {
+  font-size: 26px;
+  font-weight: 500;
+}
+.header .container .navbar {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.header .container .navbar .item {
+  flex-grow: 1;
+  padding: 20px;
+  border-bottom: 5px solid transparent;
+  transition: 0.3s;
+}
+.header .container .navbar .item:hover {
+  border-bottom: 5px solid #26ff93;
+}
+.header .container .navSearch {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header .container .navSearch input,
+.header .container .navSearch button {
+  border: none;
+  outline: none;
+  height: 30px;
+  background-color: #ffffff;
+}
+.header .container .navSearch input {
+  padding-left: 12px;
+  width: 80%;
+  border-radius: 100px 0 0 100px;
+}
+.header .container .navSearch button {
+  width: 20%;
+  border-radius: 0 100px 100px 0;
+  cursor: pointer;
+}
+.header .container .navSearch .fa-search {
+  color: #555555;
+}
+.header .container .navSearch .fa-search:hover {
+  color: #26ff93;
+  transition: all 0.3s;
+}/*# sourceMappingURL=revise.css.map */

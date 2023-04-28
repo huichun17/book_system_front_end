@@ -8,6 +8,7 @@ const inventory = document.querySelector("#inventoryId");
 const sales = document.querySelector("#salesId");
 const type = document.querySelector("#typeId");
 const addResponse = document.querySelector("#addResponseId");
+const result = document.querySelector(".result");
 
 addBtn.addEventListener("click", function () {
     let addRes;
@@ -50,12 +51,14 @@ addBtn.addEventListener("click", function () {
         })
         .then(function (data) {
             console.log(data);
+            result.innerHTML =`<h5>${data.message}</h5>`;
         })
         .catch(function (error) {
             console.log(error);
         })
 
-    addResponse.textContent = addRes;
+    
+
     console.log(addRes);
 
 
