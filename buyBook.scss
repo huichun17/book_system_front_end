@@ -7,6 +7,10 @@
 body {
     box-sizing: border-box;
     font-family: "Noto Sans TC", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #232526, #5a5a5a);
+
 }
 
 a {
@@ -92,3 +96,40 @@ a {
         }
     }
 }
+
+//========================================================
+main {
+    width: 100vw;
+    height: 85vh;
+    // background-image: linear-gradient(to top, #232526, #5a5a5a);
+}
+
+.inputArea {
+    position: absolute;
+    border: 5px solid #aaa;
+    width: 30vw;
+    height: 60vh;
+    color: white;
+    padding: 15px;
+    left: 30%;
+    top: 25%;
+    font-size: 22px;
+}
+
+// .addToCartBtn {
+    
+// }
+
+
+// .cartArea {
+
+   
+
+//     .buyBookBtn {
+      
+//     }
+// }
+
+// .buyList {
+  
+// }

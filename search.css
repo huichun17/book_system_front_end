@@ -7,6 +7,8 @@
 body {
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
@@ -78,4 +80,8 @@ a {
 .header .container .navSearch .fa-search:hover {
   color: #26ff93;
   transition: all 0.3s;
+}
+
+main {
+  background-image: linear-gradient(to top, #232526, #5a5a5a);
 }/*# sourceMappingURL=search.css.map */

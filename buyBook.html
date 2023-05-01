@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ご注文</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./buyBook.css">
 
 </head>
@@ -34,21 +36,33 @@
             </form>
         </div>
     </div>
-    書籍名：<input type="text" id="bookTitleId" placeholder="書籍名を入力してください"><br>
-    数量：<input type="text" id="quantityId" placeholder="数量を入力してください"><br>
-    <!-- 数量：<select class="toolType" id="toolTypeId"">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-    </select> -->
-    <button class="buyBookBtn" id="buyBookBtnId">ご注文手続きへ進む</button>
+    <main>
+        <div>
+            <div class="inputArea">
+
+                書籍名：<br><input type="text" id="bookTitleId" placeholder="書籍名を入力してください"><br>
+                数量：<br><input type="text" id="quantityId" placeholder="数量を入力してください"><br>
+                <button class="addToCartBtn" id="addToCartBtnId">カートに入れる</button>
+            </div>
+           <div>
+                <div id="result">カート</div>
+                <button class="buyBookBtn" id="buyBookBtnId">ご注文手続きへ進む</button>
+            </div>
+        </div>
+        </div> 
+        - <div>
+            
+            <div id="result">カート</div>
+            <button class="buyBookBtn" id="buyBookBtnId">ご注文手続きへ進む</button>
+        </div>
+        <div class="resultArea"> 
+       <div id="buyList" class="buyList">選択したもの</div>
+
+        <!-- </div> -->
+
+
+
+    </main>
 
 
 

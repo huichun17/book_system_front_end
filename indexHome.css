@@ -7,6 +7,9 @@
 body {
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, #232526, #5a5a5a);
 }
 
 a {
@@ -94,12 +97,13 @@ a {
 }
 
 .addBookArea {
+  box-sizing: content-box;
   border: 1px solid #8b8b8b;
   box-shadow: 0 0 5px #a0a0a0;
   border-radius: 6px;
   width: 23vw;
-  height: 75vh;
-  margin: 1% 1%;
+  height: 65vh;
+  margin: auto;
   padding: 1%;
   color: white;
   font-size: 16px;
